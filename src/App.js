@@ -42,7 +42,7 @@ class App extends Component {
             temp={this.state.weatherInfo.main.temp}
             minTemp={this.state.weatherInfo.main.temp_min}
             maxTemp={this.state.weatherInfo.main.temp_max}/>
-        : 'no-data'}
+        : 'loading ...'}
 
       </div>
     );

@@ -9,3 +9,11 @@ I got the idea and the initial user stories for this project from [FreeCodeCamp]
 
 ## Resources
 As recommended, I will use [OpenWeatherAPI](https://openweathermap.org/current#geo)
+
+### Icons
+Since I could not find a single library with all icons I needed, I use a combination of the following libraries to 
+display icons for the weather data.
+display icons for the weather data.
+
+* [react-fontawesome](https://github.com/danawoodman/react-fontawesome)
+* [weather-icons](https://github.com/erikflowers/weather-icons)

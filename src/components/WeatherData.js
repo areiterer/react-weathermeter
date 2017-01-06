@@ -1,36 +1,36 @@
 import React from 'react';
+import FontAwesome from 'react-fontawesome';
 
 function WeatherData(props) {
   return (
     <div>
       <h2 id="cityName">{props.cityName}</h2>
       <div>
-        <label>Temperature: </label>
         <span id="temperature">{props.temp}</span>
         <span className="unit">°C</span>
       </div>
       <div>
-        <label>Min.: </label>
+        <FontAwesome name="thermometer-empty" />
         <span id="mintemp">{props.minTemp}</span>
         <span className="unit">°C</span>
       </div>
       <div>
-        <label>Max.: </label>
+        <FontAwesome name="thermometer-full" />
         <span id="maxtemp">{props.maxTemp}</span>
         <span className="unit">°C</span>
       </div>
       <div>
-        <label>Humidity: </label>
+        <i className="wi wi-humidity" />
         <span id="humidity">{props.humidity}</span>
         <span className="unit">%</span>
       </div>
       <div>
-        <label>Air pressure: </label>
+        <i className="wi wi-barometer" />
         <span id="airpressure">{props.airPressure}</span>
         <span className="unit">hPa</span>
       </div>
       <div>
-        <label>Wind speed: </label>
+        <i className="wi wi-strong-wind" />
         <span id="windspeed">{props.windSpeed}</span>
         <span className="unit">m/s</span>
       </div>

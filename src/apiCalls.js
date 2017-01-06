@@ -7,3 +7,11 @@ export function fetchWeatherInfoByGeolocation(long, lat) {
     return response.json()
   });
 }
+
+export function fetchWeatherInfoByLocationName(locationName) {
+  return fetch(baseUrl+'&q='+locationName+'&units=metric', {
+    method: 'get'
+  }).then((response) => {
+    return response.json()
+  });
+}

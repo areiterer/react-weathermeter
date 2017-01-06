@@ -12,7 +12,11 @@ describe("WeatherData", () => {
       cityName={testData.name}
       temp={testData.main.temp}
       minTemp={testData.main.temp_min}
-      maxTemp={testData.main.temp_max}/>);
+      maxTemp={testData.main.temp_max}
+      humidity={testData.main.humidity}
+      airPressure={testData.main.pressure}
+      windSpeed={testData.wind.speed}
+    />);
   });
 
   it("renders the name of the city", () => {
@@ -38,4 +42,23 @@ describe("WeatherData", () => {
     expect(max.length).toEqual(1);
     expect(max.text()).toEqual(testData.main.temp_max.toString());
   });
+
+  it("renders the wind speed", () => {
+    const windspeed = wrapper.find('#windspeed');
+    expect(windspeed.length).toEqual(1);
+    expect(windspeed.text()).toEqual(testData.wind.speed.toString());
+  });
+
+  it("renders the air pressure", () => {
+    const pressure = wrapper.find('#airpressure');
+    expect(pressure.length).toEqual(1);
+    expect(pressure.text()).toEqual(testData.main.pressure.toString());
+  });
+
+  it("renders the humidity", () => {
+    const humidity = wrapper.find('#humidity');
+    expect(humidity.length).toEqual(1);
+    expect(humidity.text()).toEqual(testData.main.humidity.toString());
+  });
+
 });

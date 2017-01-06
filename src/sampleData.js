@@ -20,7 +20,8 @@ export const testData = {
     temp_min: -4,
     temp_max: -1
   },
-  visibility: 10000, wind: {
+  visibility: 10000,
+  wind: {
     speed: 0.5
   },
   clouds: {

@@ -58,7 +58,11 @@ class App extends Component {
               cityName={this.state.weatherInfo.name}
               temp={this.state.weatherInfo.main.temp}
               minTemp={this.state.weatherInfo.main.temp_min}
-              maxTemp={this.state.weatherInfo.main.temp_max}/>
+              maxTemp={this.state.weatherInfo.main.temp_max}
+              humidity={this.state.weatherInfo.main.humidity}
+              airPressure={this.state.weatherInfo.main.pressure}
+              windSpeed={this.state.weatherInfo.wind.speed}
+            />
           </div>
           : 'loading ...'}
 

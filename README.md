@@ -23,5 +23,5 @@ Since I could not find a single library with all icons I needed, I use a combina
 display icons for the weather data.
 display icons for the weather data.
 
-* [react-fontawesome](https://github.com/danawoodman/react-fontawesome)
+* [Font Awesome](http://fontawesome.io/icons/)
 * [weather-icons](https://github.com/erikflowers/weather-icons)

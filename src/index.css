@@ -32,9 +32,9 @@ body {
 }
 
 .fa {
-	font-size: 1.5em;
-	margin: 0 10px;
-	width:40px;
+	font-size: 5vh;
+	margin: 0 1.2vh;
+	width:8vw;
 	vertical-align:top;
 }
 
@@ -42,20 +42,16 @@ body {
 	margin-left:5px;
 }
 .minMax {
-	margin-top:30px;
+	margin-top:3.7vh;
 }
 
 .minMax div {
-	line-height:1.6em;
-	padding: 6px;
-}
-
-.border {
-	border: 1px solid black;
+	line-height:8.7vw;
+	padding: 2vw;
 }
 
 #mintemp, #maxtemp {
-	font-size: 2em;
+	font-size: 10vw;
 }
 
 #weatherData {
@@ -64,44 +60,41 @@ body {
 
 #cityName {
 	text-align:center;
-	margin: 30px 0;
+	margin: 3vh 0;
 }
 
 #temperature {
- 	font-size: 5.5em;
+ 	font-size: 28vw;
 	font-weight: bold;
-	margin-left:20px;
+	margin-left:3vw;
 }
 
 #weatherIcon {
 	display:block;
-	margin: 30px auto;
-	width: 250px;
-	height: 250px;
+	margin: 6vw auto;
+	width: 60vw;
+	height: 60vw;
 }
 
 #additionaldata label {
 	text-transform: uppercase;
-	font-size: 0.7em;
-	margin: 0 5px;
+	font-size: 4.4vw;
+	margin: 0 1.2vw;
 }
 
 #additionaldata {
-/*	position: absolute;
-	bottom:0;
-	left:0; */
-	margin:15px 10px;
+	margin:4vh 3vw;
 
 	text-align: center;
 }
 
 .value {
-	margin: 0 3px;
-	font-size: 0.9em;
+	margin: 0 1vw;
+	font-size: 5vw;
 }
 
 #additionaldata .unit {
-	font-size: 0.9em;
+	font-size: 5vw;
 }
 
 
@@ -110,7 +103,7 @@ body {
 	background: transparent;
 	color: black;
 	font-size:0.85em;
-	height: 50px;
+	height: 6vh;
 	border: 0;
 	border-radius: 0;
 	border-bottom: 1px solid grey;

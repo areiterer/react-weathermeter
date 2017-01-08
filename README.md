@@ -5,7 +5,6 @@ I got the idea and the initial user stories for this project from [FreeCodeCamp]
 ## Initial user stories
 * [x] As a user, I can see the weather in his current location
 * [x] As a user, I can see different icons or background images (e.g. snowy mountain, hot desert) depending on the weather
-* [ ] As a user, I can push a button to toggle between Fahrenheit and Celsius
 
 ## Try out
 If you want to try it out, just clone the repository and use
@@ -21,7 +20,7 @@ As recommended, I will use [OpenWeatherAPI](https://openweathermap.org/current#g
 ### Icons
 Since I could not find a single library with all icons I needed, I use a combination of the following libraries to 
 display icons for the weather data.
-display icons for the weather data.
 
 * [Font Awesome](http://fontawesome.io/icons/)
 * [weather-icons](https://github.com/erikflowers/weather-icons)
+* [meteocons](www.alessioatzeni.com/meteocons)

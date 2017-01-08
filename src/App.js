@@ -15,6 +15,7 @@ class App extends Component {
 
     this.getWeatherInfoByLocation = this.getWeatherInfoByLocation.bind(this);
     this.handleLocationChange = this.handleLocationChange.bind(this);
+    this.getBackgroundClass = this.getBackgroundClass.bind(this);
   }
 
   componentDidMount() {
@@ -48,20 +49,34 @@ class App extends Component {
     this.getWeatherInfoByLocation(locationName);
   }
 
+  getBackgroundClass() {
+    if(!this.state.weatherInfo)
+      return '';
+
+    const cloudyness = this.state.weatherInfo.clouds.all;
+
+    if(cloudyness < 20)
+      return 'bg-sunny';
+    else
+      return 'bg-cloudy';
+
+  }
+
   render() {
     return (
-      <div className="App">
+      <div className={"App "+this.getBackgroundClass()}>
         {this.state.weatherInfo ?
           <div>
             <LocationBar onLocationChange={this.handleLocationChange}/>
             <WeatherData
               cityName={this.state.weatherInfo.name}
-              temp={this.state.weatherInfo.main.temp}
+              temp={Number(this.state.weatherInfo.main.temp.toFixed(0))}
               minTemp={this.state.weatherInfo.main.temp_min}
               maxTemp={this.state.weatherInfo.main.temp_max}
               humidity={this.state.weatherInfo.main.humidity}
               airPressure={this.state.weatherInfo.main.pressure}
               windSpeed={this.state.weatherInfo.wind.speed}
+              weatherCode={this.state.weatherInfo.weather[0].icon}
             />
           </div>
           : 'loading ...'}

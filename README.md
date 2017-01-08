@@ -4,7 +4,7 @@ I got the idea and the initial user stories for this project from [FreeCodeCamp]
 
 ## Initial user stories
 * [x] As a user, I can see the weather in his current location
-* [ ] As a user, I can see differen ticons or background images (e.g. snowy mountain, hot desert) depending on the weather
+* [x] As a user, I can see different icons or background images (e.g. snowy mountain, hot desert) depending on the weather
 * [ ] As a user, I can push a button to toggle between Fahrenheit and Celsius
 
 ## Try out

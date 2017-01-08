@@ -17,17 +17,19 @@ class LocationBar extends React.Component {
 
   handleSubmit(e) {
     this.props.onLocationChange(this.state.location);
+    this.setState({ location: '' });
     e.preventDefault();
   }
 
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Location:
-        </label>
-        <input ref="locationInput" type="text" value={this.state.location} onChange={this.handleChange}/>
-        <input type="submit" value="Submit"/>
+        <input
+          id="locationInput"
+          ref="locationInput" type="text"
+          className="form-control"
+          placeholder="Search for location"
+          value={this.state.location} onChange={this.handleChange}/>
       </form>
     )
   }

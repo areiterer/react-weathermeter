@@ -71,8 +71,8 @@ class App extends Component {
             <WeatherData
               cityName={this.state.weatherInfo.name}
               temp={Number(this.state.weatherInfo.main.temp.toFixed(0))}
-              minTemp={this.state.weatherInfo.main.temp_min}
-              maxTemp={this.state.weatherInfo.main.temp_max}
+              minTemp={Number(this.state.weatherInfo.main.temp_min.toFixed(0))}
+              maxTemp={Number(this.state.weatherInfo.main.temp_max.toFixed(0))}
               humidity={this.state.weatherInfo.main.humidity}
               airPressure={this.state.weatherInfo.main.pressure}
               windSpeed={this.state.weatherInfo.wind.speed}

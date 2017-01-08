@@ -12,6 +12,7 @@ body {
 	height: 100%;
 }
 
+
 #root {
 	height: 100%;
 	padding:0;
@@ -31,80 +32,153 @@ body {
 	background: #D7E2E2;
 }
 
-.fa {
-	font-size: 5vh;
-	margin: 0 1.2vh;
-	width:8vw;
-	vertical-align:top;
+@media (max-width: 700px) {
+
+	.fa {
+		font-size: 5vh;
+		margin: 0 1.2vh;
+		width:8vw;
+		vertical-align:top;
+	}
+
+	.unit {
+		margin-left:5px;
+	}
+	.minMax {
+		margin-top:3.7vh;
+	}
+
+	.minMax div {
+		line-height:8.7vw;
+		padding: 2vw;
+	}
+
+	#mintemp, #maxtemp {
+		font-size: 10vw;
+	}
+
+	#weatherData {
+		text-align: left;
+	}
+
+	#cityName {
+		text-align:center;
+		margin: 3vh 0;
+	}
+
+	#temperature {
+		font-size: 29vw;
+		font-weight: bold;
+		margin-left:12vw;
+	}
+
+	#weatherIcon {
+		display:block;
+		margin: 6vw auto;
+		width: 60vw;
+		height: 60vw;
+	}
+
+	#additionaldata label {
+		text-transform: uppercase;
+		font-size: 4.4vw;
+		margin: 0 1.2vw;
+	}
+
+	#additionaldata {
+		margin:4vh 3vw;
+
+		text-align: center;
+	}
+
+	.value {
+		margin: 0 1vw;
+		font-size: 5vw;
+	}
+
+	#additionaldata .unit {
+		font-size: 5vw;
+	}
+
+	#locationInput {
+		background: transparent;
+		color: black;
+		font-size:0.85em;
+		height: 6vh;
+		border: 0;
+		border-radius: 0;
+		border-bottom: 1px solid grey;
+	}
 }
 
-.unit {
-	margin-left:5px;
-}
-.minMax {
-	margin-top:3.7vh;
-}
 
-.minMax div {
-	line-height:8.7vw;
-	padding: 2vw;
-}
+@media (min-width:701px) {
+	#weatherIcon {
+		width: 250px;
+		height: 250px;
+		display:block;
+		margin: 0 auto;
+	}
 
-#mintemp, #maxtemp {
-	font-size: 10vw;
-}
+	#temperature {
+		font-size:4.2em;
+	}
 
-#weatherData {
-	text-align: left;
-}
+	.fa {
+		font-size: 1.4em;
+		width: 1.2em;
+	}
 
-#cityName {
-	text-align:center;
-	margin: 3vh 0;
-}
+	.unit {
+		margin-left:5px;
+	}
+	.minMax {
+		margin-top:22px;
+	}
 
-#temperature {
- 	font-size: 28vw;
-	font-weight: bold;
-	margin-left:3vw;
-}
+	.minMax div {
+		line-height:1.8em;
+		padding:1px;
+	}
 
-#weatherIcon {
-	display:block;
-	margin: 6vw auto;
-	width: 60vw;
-	height: 60vw;
-}
+	#mintemp, #maxtemp {
+		font-size: 1.2em;
+	}
 
-#additionaldata label {
-	text-transform: uppercase;
-	font-size: 4.4vw;
-	margin: 0 1.2vw;
-}
+	#weatherData {
+		text-align: left;
+	}
 
-#additionaldata {
-	margin:4vh 3vw;
-
-	text-align: center;
-}
-
-.value {
-	margin: 0 1vw;
-	font-size: 5vw;
-}
-
-#additionaldata .unit {
-	font-size: 5vw;
-}
+	#cityName {
+		text-align:center;
+		margin: 1.2em 0;
+	}
 
 
+	#additionaldata label {
+		text-transform: uppercase;
+		padding: 0 25px;
+	}
 
-#locationInput {
-	background: transparent;
-	color: black;
-	font-size:0.85em;
-	height: 6vh;
-	border: 0;
-	border-radius: 0;
-	border-bottom: 1px solid grey;
+	#additionaldata {
+		text-align: center;
+	}
+
+	.value {
+		padding-left:15px;
+	}
+
+	#additionaldata .unit {
+		padding-right:15px;
+	}
+
+	#locationInput {
+		background: transparent;
+		color: black;
+		font-size:0.85em;
+		height: 1.7em;
+		border: 0;
+		border-radius: 0;
+		border-bottom: 1px solid grey;
+	}
 }

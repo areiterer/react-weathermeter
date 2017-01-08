@@ -23,14 +23,24 @@ class LocationBar extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input
-          id="locationInput"
-          ref="locationInput" type="text"
-          className="form-control"
-          placeholder="Search for location"
-          value={this.state.location} onChange={this.handleChange}/>
-      </form>
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-3"></div>
+          <div className="col-sm-6">
+            <center>
+              <form onSubmit={this.handleSubmit}>
+                <input
+                  id="locationInput"
+                  ref="locationInput" type="text"
+                  className="form-control"
+                  placeholder="Search for location"
+                  value={this.state.location} onChange={this.handleChange}/>
+              </form>
+            </center>
+          </div>
+          <div className="col-sm-3"></div>
+        </div>
+      </div>
     )
   }
 }

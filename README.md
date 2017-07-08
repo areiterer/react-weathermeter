@@ -14,6 +14,9 @@ If you want to try it out, just clone the repository and use
   
 and then you can access it with localhost:3000 
 
+## Todo
+* [ ] Styling for Desktop use
+
 ## Resources
 As recommended, I will use [OpenWeatherAPI](https://openweathermap.org/current#geo)
 
